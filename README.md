@@ -125,7 +125,7 @@ cd Deep-Live-Cam
 **3. Download the Models**
 
 1. [GFPGANv1.4](https://huggingface.co/hacksider/deep-live-cam/resolve/main/GFPGANv1.4.pth)
-2. [inswapper\_128\_fp16.onnx](https://huggingface.co/hacksider/deep-live-cam/resolve/main/inswapper_128_fp16.onnx)
+2. [inswapper\_128.onnx](https://huggingface.co/hacksider/deep-live-cam/blob/main/inswapper_128.onnx)
 
 Place these files in the "**models**" folder.
 
@@ -196,7 +196,7 @@ pip install -r requirements.txt
 ```bash
 pip install -U torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 pip uninstall onnxruntime onnxruntime-gpu
-pip install onnxruntime-gpu==1.21.0
+pip install onnx==1.18.0 onnxruntime-gpu==1.20.2
 ```
 
 3. Usage:

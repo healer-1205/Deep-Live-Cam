@@ -60,7 +60,7 @@ def get_face_swapper() -> Any:
 
     with THREAD_LOCK:
         if FACE_SWAPPER is None:
-            model_path = os.path.join(models_dir, "inswapper_128_fp16.onnx")
+            model_path = os.path.join(models_dir, "inswapper_128.onnx")
             FACE_SWAPPER = insightface.model_zoo.get_model(
                 model_path, providers=modules.globals.execution_providers
             )
